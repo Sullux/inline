@@ -1,0 +1,38 @@
+{
+  "name": "inline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Sullux/inline.git",
+  "author": "Charles Sullivan <sullux@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose --passWithNoTests",
+    "integration": "yarn start -- --test",
+    "lint": "yarn standardx",
+    "fix": "yarn standardx --fix"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "standardx": "^7.0.0"
+  },
+  "eslintConfig": {
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "env": {
+      "es6": true
+    }
+  },
+  "standardx": {
+    "env": [
+      "jest",
+      "node"
+    ]
+  }
+}
